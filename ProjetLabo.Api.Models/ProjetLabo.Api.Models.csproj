@@ -7,9 +7,4 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\Tools.Ado\Tools.Ado.csproj" />
-    <ProjectReference Include="..\Tools.Cqs\Tools.Cqs.csproj" />
-  </ItemGroup>
-
 </Project>

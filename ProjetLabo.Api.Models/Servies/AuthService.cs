@@ -7,7 +7,7 @@ using System.Data.Common;
 using Tools.Ado;
 using Tools.Cqs.Commands;
 
-namespace GestContact.Api.Models.Services
+namespace ProjetLabo.Api.Models.Services
 {
     public class AuthService : IAuthRepository
     {

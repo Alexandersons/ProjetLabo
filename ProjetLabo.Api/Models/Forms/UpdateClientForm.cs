@@ -3,7 +3,7 @@
 namespace ProjetLabo.Api.Models.Forms
 {
 #nullable disable
-    public class UpdateContactForm
+    public class UpdateClientForm
     {
         [Required]
         [StringLength(50, MinimumLength = 1)]
