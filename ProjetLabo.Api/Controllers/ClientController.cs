@@ -23,7 +23,7 @@ namespace ProjetLabo.Api.Controllers
         }
 
  
-        // GET api/<ContactController>/5
+        // GET api/<ClientController>/5
         [HttpGet("{id}")]
         public IActionResult Get(int id)
         {
@@ -36,7 +36,7 @@ namespace ProjetLabo.Api.Controllers
             return Ok(client);
         }
 
-        // POST api/<ContactController>
+        // POST api/<ClientController>
         [HttpPost]
         public IActionResult Post([FromBody] AddClientForm form)
         {
@@ -52,11 +52,11 @@ namespace ProjetLabo.Api.Controllers
             return NoContent();
         }
 
-        // PUT api/<ContactController>/5
+        // PUT api/<ClientController>/5
         [HttpPut("{id}")]
         public IActionResult Put(int id, [FromBody] UpdateClientForm form)
         {
-            ICommandResult result = _clientRepository.Execute(new UpdateClientCommand (form.Nom_Societe, form.Num_Tva, form.Email, form.Adresse, form.Tel, form.Pays, 1));
+            ICommandResult result = _clientRepository.Execute(new UpdateClientCommand (form.Nom_Societe, form.Num_Tva, form.Email, form.Adresse, form.Tel, form.Pays));
 
             if (result.IsFailure)
             {
@@ -70,7 +70,7 @@ namespace ProjetLabo.Api.Controllers
             return NoContent();
         }
 
-        //DELETE api/<ContactController>/5
+        //DELETE api/<ClientController>/5
         [HttpDelete("{id}")]
         public IActionResult Delete(int id)
         {
