@@ -1,6 +1,10 @@
-﻿using System.Data;
+﻿using System.Collections.Generic;
+using System;
+using System.Data;
 using System.Data.Common;
 using System.Reflection;
+using System.Threading.Tasks;
+using System.Linq;
 
 namespace Tools.Ado
 {

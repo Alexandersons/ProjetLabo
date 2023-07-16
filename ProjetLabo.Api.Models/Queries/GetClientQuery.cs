@@ -3,13 +3,14 @@ using Tools.Cqs.Queries;
 
 namespace ProjetLabo.Api.Models.Queries
 {
-    public class GetClientQuery : IQueryDefinition<IEnumerable<Client>>
+    public class GetClientQuery : IQueryDefinition<Client?>
     {
         public int Id_Client { get; init; }
-
-        public GetClientQuery(int id_client)
+        public int Id_Utilisateur { get; init; }
+        public GetClientQuery(int id_client, int id_utilisateur)
         {
             Id_Client = id_client;
+            Id_Utilisateur = Id_Utilisateur;
         }
     }
 }

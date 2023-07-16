@@ -13,7 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\ProjetLabo.Api.Models\ProjetLabo.Api.Models.csproj" />
+    <ProjectReference Include="..\ProjetLabo.Api.Models\ProjetLabo.Api.Models.csproj" />
     <ProjectReference Include="..\Tools.Ado\Tools.Ado.csproj" />
     <ProjectReference Include="..\Tools.Cqs\Tools.Cqs.csproj" />
   </ItemGroup>
